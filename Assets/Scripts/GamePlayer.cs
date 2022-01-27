@@ -1,8 +1,12 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class GamePlayer : MonoBehaviour {
+    [SerializeField]
+    private Movement movement;
+
+
     [SerializeField]
     private List<GameState> gameStates = null;
 
@@ -26,7 +30,7 @@ public class GamePlayer : MonoBehaviour {
     void Start() {
         currentState = 0; //Maybe hierboven zetten
         if(gameStates.Count > 0) {
-            endState = gameStates.Count;
+            endState = gameStates.Count-1;
         } else {
             endState = 0;
         }
@@ -43,16 +47,21 @@ public class GamePlayer : MonoBehaviour {
 
     //maybe private
     public void NextState() {
-        if(!isCounting) {
-            /*currentState++;*/
+        if(!isCounting && currentState < endState) {
             fadeAnimator.SetTrigger("Fadeout");
             Debug.Log("Current State: " + currentState);
             StartTimer();
+            currentState++;
+        } else if(!isCounting && currentState == endState) {
+            fadeAnimator.SetTrigger("Fadeout");
+            Debug.Log("Current State: " + currentState);
+            StartTimer();
+            currentState = 0;
         }
     }
 
     public void OnFadeComplete() {
-		currentState++;
+        movement.MoveToWayPoint(currentState);
         fadeAnimator.SetTrigger("Fadein");
 	}
 
