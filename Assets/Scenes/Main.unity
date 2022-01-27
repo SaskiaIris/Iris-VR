@@ -3577,6 +3577,7 @@ GameObject:
   - component: {fileID: 1107266552}
   - component: {fileID: 1107266553}
   - component: {fileID: 1107266554}
+  - component: {fileID: 1107266555}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -3663,16 +3664,16 @@ MonoBehaviour:
     onRecognized:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1107266553}
-          m_TargetAssemblyTypeName: GamePlayer, Assembly-CSharp
-          m_MethodName: NextState
-          m_Mode: 1
+        - m_Target: {fileID: 1107266555}
+          m_TargetAssemblyTypeName: GestureTester, Assembly-CSharp
+          m_MethodName: TestGesture
+          m_Mode: 5
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
-            m_StringArgument: 
+            m_StringArgument: Thumbs up
             m_BoolArgument: 0
           m_CallState: 2
   - name: Normal hand
@@ -3703,11 +3704,252 @@ MonoBehaviour:
     - {x: -0.1473326, y: -0.0001455117, z: 0.05220092}
     onRecognized:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 1107266555}
+          m_TargetAssemblyTypeName: GestureTester, Assembly-CSharp
+          m_MethodName: TestGesture
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Normal hand
+            m_BoolArgument: 0
+          m_CallState: 2
+  - name: Pinch
+    fingerDatas:
+    - {x: -0.000000024357602, y: 0.000000011723085, z: -0.000000012548101}
+    - {x: -0.000000024357602, y: 0.000000011723085, z: -0.000000012548101}
+    - {x: -0.020069323, y: -0.0115540875, z: -0.010496529}
+    - {x: -0.038787756, y: -0.02616592, z: -0.01782892}
+    - {x: -0.06377432, y: -0.046913184, z: -0.019349204}
+    - {x: -0.092566065, y: -0.06288861, z: -0.01174699}
+    - {x: -0.095996216, y: -0.0073164627, z: -0.023550656}
+    - {x: -0.11962921, y: -0.036943465, z: -0.022066973}
+    - {x: -0.121853456, y: -0.061099328, z: -0.02057854}
+    - {x: -0.09564658, y: -0.00254317, z: -0.0017258786}
+    - {x: -0.11824921, y: -0.039036375, z: -0.0014208704}
+    - {x: -0.120602645, y: -0.06648335, z: -0.0017393939}
+    - {x: -0.088693745, y: -0.006529331, z: 0.017465264}
+    - {x: -0.10922563, y: -0.039677646, z: 0.016893186}
+    - {x: -0.11096999, y: -0.06601466, z: 0.013816921}
+    - {x: -0.034073617, y: -0.009419808, z: 0.022998547}
+    - {x: -0.07789581, y: -0.013691196, z: 0.03505409}
+    - {x: -0.097241536, y: -0.037437286, z: 0.03268547}
+    - {x: -0.10067461, y: -0.057034746, z: 0.02859811}
+    - {x: -0.11196434, y: -0.077966556, z: -0.010143038}
+    - {x: -0.119219095, y: -0.083178505, z: -0.017965885}
+    - {x: -0.1185815, y: -0.09138739, z: -0.0023232847}
+    - {x: -0.11148071, y: -0.09001987, z: 0.009585651}
+    - {x: -0.10719487, y: -0.07720185, z: 0.022861868}
+    onRecognized:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1107266555}
+          m_TargetAssemblyTypeName: GestureTester, Assembly-CSharp
+          m_MethodName: TestGesture
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Pinch
+            m_BoolArgument: 0
+          m_CallState: 2
+  - name: Relaxed hand
+    fingerDatas:
+    - {x: -0.000000012179714, y: -0.000000012841117, z: -0.00000002397788}
+    - {x: -0.000000012179714, y: -0.000000012841117, z: -0.00000002397788}
+    - {x: -0.020069316, y: -0.011554118, z: -0.010496559}
+    - {x: -0.036491424, y: -0.020327214, z: -0.026958488}
+    - {x: -0.06273187, y: -0.031695, z: -0.04242777}
+    - {x: -0.094246194, y: -0.043601364, z: -0.039770693}
+    - {x: -0.09599623, y: -0.0073164627, z: -0.023550697}
+    - {x: -0.123857334, y: -0.032994628, z: -0.021856673}
+    - {x: -0.12663305, y: -0.05710222, z: -0.020520106}
+    - {x: -0.09564658, y: -0.002543144, z: -0.0017259046}
+    - {x: -0.120280124, y: -0.03766499, z: -0.0001867339}
+    - {x: -0.1114106, y: -0.06371403, z: -0.0015136003}
+    - {x: -0.088693775, y: -0.006529294, z: 0.017465279}
+    - {x: -0.11460175, y: -0.0356056, z: 0.019475438}
+    - {x: -0.10369752, y: -0.05903465, z: 0.013284959}
+    - {x: -0.034073554, y: -0.009419844, z: 0.022998553}
+    - {x: -0.07789584, y: -0.013691169, z: 0.035054073}
+    - {x: -0.10213845, y: -0.032140177, z: 0.039013036}
+    - {x: -0.09459688, y: -0.048507318, z: 0.029643081}
+    - {x: -0.1163691, y: -0.054405525, z: -0.04000543}
+    - {x: -0.12554596, y: -0.07932985, z: -0.018068708}
+    - {x: -0.09036124, y: -0.07657886, z: -0.005520731}
+    - {x: -0.08189568, y: -0.06609997, z: 0.0049678385}
+    - {x: -0.07808043, y: -0.053411387, z: 0.016031109}
+    onRecognized:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1107266555}
+          m_TargetAssemblyTypeName: GestureTester, Assembly-CSharp
+          m_MethodName: TestGesture
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Relaxed hand
+            m_BoolArgument: 0
+          m_CallState: 2
+  - name: Pointing
+    fingerDatas:
+    - {x: 0.000000023163032, y: -0.000000017725526, z: -0.0000000061203025}
+    - {x: 0.000000023163032, y: -0.000000017725526, z: -0.0000000061203025}
+    - {x: -0.020069294, y: -0.011554107, z: -0.010496521}
+    - {x: -0.037708323, y: -0.023158517, z: -0.023605743}
+    - {x: -0.062633365, y: -0.041506767, z: -0.03356435}
+    - {x: -0.09146786, y: -0.0564963, z: -0.024298359}
+    - {x: -0.09599625, y: -0.007316448, z: -0.023550674}
+    - {x: -0.1330536, y: 0.00035507977, z: -0.021024154}
+    - {x: -0.15683645, y: 0.0049536303, z: -0.019050067}
+    - {x: -0.09564665, y: -0.0025431216, z: -0.0017258888}
+    - {x: -0.113800555, y: -0.04138346, z: 0.0004170537}
+    - {x: -0.09096627, y: -0.056325786, z: -0.0033641942}
+    - {x: -0.088693775, y: -0.0065293238, z: 0.017465238}
+    - {x: -0.0999889, y: -0.04385271, z: 0.017178543}
+    - {x: -0.07627884, y: -0.051308155, z: 0.0077768415}
+    - {x: -0.034073554, y: -0.009419847, z: 0.022998571}
+    - {x: -0.07789582, y: -0.013691228, z: 0.035054058}
+    - {x: -0.09209608, y: -0.040880702, z: 0.033373103}
+    - {x: -0.07520122, y: -0.042887144, z: 0.02227842}
+    - {x: -0.11001977, y: -0.06748851, z: -0.012415182}
+    - {x: -0.17844927, y: 0.009790748, z: -0.015772322}
+    - {x: -0.06664535, y: -0.054335434, z: -0.008764725}
+    - {x: -0.058667116, y: -0.03587318, z: 0.0009942874}
+    - {x: -0.06124282, y: -0.028093098, z: 0.014006214}
+    onRecognized:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1107266555}
+          m_TargetAssemblyTypeName: GestureTester, Assembly-CSharp
+          m_MethodName: TestGesture
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Pointing
+            m_BoolArgument: 0
+          m_CallState: 2
+  - name: Metal hand
+    fingerDatas:
+    - {x: 0.000000024646639, y: -0.000000014471638, z: -0.000000008443541}
+    - {x: 0.000000024646639, y: -0.000000014471638, z: -0.000000008443541}
+    - {x: -0.020069279, y: -0.011554114, z: -0.010496529}
+    - {x: -0.038189366, y: -0.02438759, z: -0.02165957}
+    - {x: -0.062339667, y: -0.045120962, z: -0.02829125}
+    - {x: -0.09018089, y: -0.061049078, z: -0.017654557}
+    - {x: -0.095996216, y: -0.0073164552, z: -0.023550687}
+    - {x: -0.13345823, y: -0.013024047, z: -0.025132757}
+    - {x: -0.15734076, y: -0.017481342, z: -0.025783982}
+    - {x: -0.09564661, y: -0.0025431514, z: -0.0017259046}
+    - {x: -0.11387451, y: -0.04134255, z: 0.0005277749}
+    - {x: -0.08819908, y: -0.050347246, z: -0.003792692}
+    - {x: -0.08869381, y: -0.006529294, z: 0.017465254}
+    - {x: -0.10648365, y: -0.041230515, z: 0.017257672}
+    - {x: -0.0834837, y: -0.052322768, z: 0.009901654}
+    - {x: -0.03407354, y: -0.009419857, z: 0.022998571}
+    - {x: -0.07789583, y: -0.013691179, z: 0.035054065}
+    - {x: -0.10606545, y: -0.016960785, z: 0.046866156}
+    - {x: -0.123920865, y: -0.01901485, z: 0.05632767}
+    - {x: -0.10611135, y: -0.06949922, z: -0.00089073554}
+    - {x: -0.1796791, y: -0.018678121, z: -0.024875589}
+    - {x: -0.06636527, y: -0.039492905, z: -0.009279426}
+    - {x: -0.0625366, y: -0.041364796, z: 0.0039388146}
+    - {x: -0.144052, y: -0.018398255, z: 0.06507337}
+    onRecognized:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1107266555}
+          m_TargetAssemblyTypeName: GestureTester, Assembly-CSharp
+          m_MethodName: TestGesture
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Metal hand
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1107266553}
+          m_TargetAssemblyTypeName: GamePlayer, Assembly-CSharp
+          m_MethodName: NextState
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - name: Fist
+    fingerDatas:
+    - {x: -0.000000073348076, y: -0.0000000043799417, z: 0.000000012328476}
+    - {x: -0.000000073348076, y: -0.0000000043799417, z: 0.000000012328476}
+    - {x: -0.020069212, y: -0.011554094, z: -0.010496548}
+    - {x: -0.03724939, y: -0.022056561, z: -0.02506328}
+    - {x: -0.064225, y: -0.034929354, z: -0.037857845}
+    - {x: -0.09608612, y: -0.046176046, z: -0.0384468}
+    - {x: -0.09599631, y: -0.0073164627, z: -0.02355066}
+    - {x: -0.1165358, y: -0.03893152, z: -0.019416053}
+    - {x: -0.093460545, y: -0.046273768, z: -0.021488966}
+    - {x: -0.095646575, y: -0.0025431588, z: -0.0017259121}
+    - {x: -0.10870026, y: -0.043411702, z: -0.0002796799}
+    - {x: -0.08213939, y: -0.049360335, z: -0.0045351945}
+    - {x: -0.088693745, y: -0.0065293014, z: 0.017465226}
+    - {x: -0.09657176, y: -0.044686705, z: 0.015838843}
+    - {x: -0.07147797, y: -0.04708779, z: 0.0074320994}
+    - {x: -0.034073513, y: -0.009419836, z: 0.022998575}
+    - {x: -0.077895805, y: -0.013691187, z: 0.035054043}
+    - {x: -0.08521043, y: -0.0429618, z: 0.029268697}
+    - {x: -0.067387424, y: -0.044338033, z: 0.019625247}
+    - {x: -0.11773482, y: -0.055718653, z: -0.03162895}
+    - {x: -0.07632019, y: -0.032074817, z: -0.023908535}
+    - {x: -0.06657043, y: -0.030548617, z: -0.009861118}
+    - {x: -0.057756793, y: -0.027472284, z: 0.0028085578}
+    - {x: -0.05511747, y: -0.027029652, z: 0.013968343}
+    onRecognized:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1107266555}
+          m_TargetAssemblyTypeName: GestureTester, Assembly-CSharp
+          m_MethodName: TestGesture
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Fist
+            m_BoolArgument: 0
+          m_CallState: 2
   debugMode: 1
   notRecognize:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1107266555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1107266551}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f1a0213db7da6349b383769cd677ac7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1124082143
 PrefabInstance:
   m_ObjectHideFlags: 0
