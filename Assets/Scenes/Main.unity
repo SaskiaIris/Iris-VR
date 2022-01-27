@@ -1647,7 +1647,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8809903527718577059, guid: d6e505f0c097d654988327a3def743be, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -31.05
+      value: -31.069326
       objectReference: {fileID: 0}
     - target: {fileID: 8809903527718577059, guid: d6e505f0c097d654988327a3def743be, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1655,11 +1655,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8809903527718577059, guid: d6e505f0c097d654988327a3def743be, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -331.84
+      value: -331.85382
       objectReference: {fileID: 0}
     - target: {fileID: 8809903527718577059, guid: d6e505f0c097d654988327a3def743be, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.51754606
+      value: -0.2805963
       objectReference: {fileID: 0}
     - target: {fileID: 8809903527718577059, guid: d6e505f0c097d654988327a3def743be, type: 3}
       propertyPath: m_LocalRotation.x
@@ -1667,7 +1667,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8809903527718577059, guid: d6e505f0c097d654988327a3def743be, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.8556554
+      value: 0.9598259
       objectReference: {fileID: 0}
     - target: {fileID: 8809903527718577059, guid: d6e505f0c097d654988327a3def743be, type: 3}
       propertyPath: m_LocalRotation.z
@@ -1679,7 +1679,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8809903527718577059, guid: d6e505f0c097d654988327a3def743be, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 242.336
+      value: 212.592
       objectReference: {fileID: 0}
     - target: {fileID: 8809903527718577059, guid: d6e505f0c097d654988327a3def743be, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -2099,9 +2099,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 537063850}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 0.0000001
   m_Drag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0
   m_UseGravity: 1
   m_IsKinematic: 1
   m_Interpolate: 0
@@ -2537,7 +2537,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: -96.34363, y: 85.11}
-  m_SizeDelta: {x: 750, y: 500}
+  m_SizeDelta: {x: 550, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &617968807
 MonoBehaviour:
@@ -5204,7 +5204,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1196455717}
   m_LocalRotation: {x: 0.031948503, y: 0.5150326, z: -0.31735727, w: -0.7956162}
-  m_LocalPosition: {x: -1135.931, y: -193, z: 230}
+  m_LocalPosition: {x: -1201.3, y: -193, z: 263.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 617968806}
@@ -5810,7 +5810,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 700, y: 500}
+  m_SizeDelta: {x: 500, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1420507329
 MonoBehaviour:
@@ -5834,7 +5834,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 50
+    m_FontSize: 40
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -5847,7 +5847,10 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: Kont. Kont. Kont. Kont. Kont. Kont. Kont. Kont. Kont. Kont. Kont. Kont.
     Kont. Kont. Kont. Kont. Kont. Kont. Kont. Kont. Kont. Kont. Kont. Kont. Kont.
-    Kont. Kont. Kont. Kont. Kont. Kont. Kont. Kont. Kont. Kont. Billen. Billen. Billen.
+    Kont. Kont. Kont. Kont. Kont. Kont. Kont. Kont. Kont. Kont. Kont. Kont. Kont.
+    Kont. Kont. Kont. Kont. Kont. Kont. Kont. Kont. Kont. Kont. Kont. Kont. Kont.
+    Kont. Kont. Kont. Kont. Kont. Kont. Kont. Kont. Kont. Kont. Kont. Kont. Kont.
+    Kont. Kont. Kont. Kont. Kont. Kont. Billen. Billen. Billen. Billen. Billen. Billen.
     Billen. Billen. Billen. Billen. Billen. Billen. Billen. Billen. Billen. Billen.
     Billen. Billen. Billen. Billen. Billen. Billen. Billen. Billen. Billen. Billen.
     Billen. Billen. Billen. Billen. Billen. Billen. Billen. Billen. Billen. Billen.
@@ -5857,7 +5860,7 @@ MonoBehaviour:
     Billen. Billen. Billen. Billen. Billen. Billen. Billen. Billen. Billen. Billen.
     Billen. Billen. Billen. Billen. Billen. Billen. Billen. Billen. Billen. Billen.
     Billen. Billen. Billen. Billen. Billen. Billen. Billen. Billen. Billen. Billen.
-    Billen. Billen. Billen. Billen. Billen. Billen. Billen.
+    Billen. Billen. Billen. Billen.
 --- !u!222 &1420507330
 CanvasRenderer:
   m_ObjectHideFlags: 0
