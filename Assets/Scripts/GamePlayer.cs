@@ -44,12 +44,17 @@ public class GamePlayer : MonoBehaviour {
     //maybe private
     public void NextState() {
         if(!isCounting) {
-            currentState++;
+            /*currentState++;*/
             fadeAnimator.SetTrigger("Fadeout");
             Debug.Log("Current State: " + currentState);
             StartTimer();
         }
     }
+
+    public void OnFadeComplete() {
+		currentState++;
+        fadeAnimator.SetTrigger("Fadein");
+	}
 
     private void StartTimer() {
         isCounting = true;

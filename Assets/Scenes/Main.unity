@@ -2382,7 +2382,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: c818cc0d0eb528b4c867a3e10d37dbcf, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c818cc0d0eb528b4c867a3e10d37dbcf, type: 3}
       propertyPath: m_LocalScale.x
@@ -3618,7 +3618,7 @@ MonoBehaviour:
   - index: 2
     associatedWaypoint: {fileID: 1608860651}
   minTimeBetweenStates: 5
-  fadeAnimator: {fileID: 0}
+  fadeAnimator: {fileID: 2130043895}
 --- !u!114 &1107266554
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3675,6 +3675,35 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+  - name: Normal hand
+    fingerDatas:
+    - {x: 0.000000015422456, y: -0.00000005675247, z: 0.000000009696326}
+    - {x: 0.000000015422456, y: -0.00000005675247, z: 0.000000009696326}
+    - {x: -0.020069288, y: -0.011554133, z: -0.010496515}
+    - {x: -0.035549156, y: -0.018279267, z: -0.02873922}
+    - {x: -0.061866954, y: -0.025010096, z: -0.046604216}
+    - {x: -0.09212586, y: -0.029151144, z: -0.06106878}
+    - {x: -0.095996246, y: -0.0073164757, z: -0.023550667}
+    - {x: -0.13389632, y: -0.008442117, z: -0.022658054}
+    - {x: -0.15815917, y: -0.009503864, z: -0.021733627}
+    - {x: -0.095646605, y: -0.0025431216, z: -0.0017259158}
+    - {x: -0.13856623, y: -0.0028821938, z: -0.0010073856}
+    - {x: -0.16610654, y: -0.0030074865, z: -0.00030241162}
+    - {x: -0.08869377, y: -0.006529347, z: 0.017465249}
+    - {x: -0.1273414, y: -0.0018442702, z: 0.019725196}
+    - {x: -0.15371579, y: 0.00096036866, z: 0.021359548}
+    - {x: -0.034073554, y: -0.0094198305, z: 0.022998568}
+    - {x: -0.077895835, y: -0.013691245, z: 0.035054084}
+    - {x: -0.10671051, y: -0.0059092212, z: 0.04232733}
+    - {x: -0.12608254, y: -0.003808897, z: 0.048060037}
+    - {x: -0.11185716, y: -0.033356786, z: -0.07518254}
+    - {x: -0.1802065, y: -0.0064245705, z: -0.019348308}
+    - {x: -0.19065341, y: 0.0014433134, z: 0.0012063086}
+    - {x: -0.17758885, y: 0.0058555305, z: 0.022086874}
+    - {x: -0.1473326, y: -0.0001455117, z: 0.05220092}
+    onRecognized:
+      m_PersistentCalls:
+        m_Calls: []
   debugMode: 1
   notRecognize:
     m_PersistentCalls:
@@ -3757,38 +3786,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 4ad71d0c76d63374e9c5fef03ba3b118, type: 3}
   m_PrefabInstance: {fileID: 1971068172}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1143542335 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2186719294084578591, guid: b67b64aa99eb92441813021a060cae22, type: 3}
-  m_PrefabInstance: {fileID: 2188449122693676793}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &1143542336 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2184086767395674941, guid: b67b64aa99eb92441813021a060cae22, type: 3}
-  m_PrefabInstance: {fileID: 2188449122693676793}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1143542339
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1143542335}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 478b14593960e4b4f88ead67d83b9145, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  grabBegin: 0.55
-  grabEnd: 0.35
-  m_parentHeldObject: 0
-  m_moveHandPosition: 0
-  m_gripTransform: {fileID: 1143542336}
-  m_grabVolumes: []
-  m_controller: 0
-  m_parentTransform: {fileID: 0}
-  m_player: {fileID: 0}
-  pinchThreshold: 0.7
 --- !u!4 &1144100390 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 6faa4076a385e5e42a2cabd7f38a7b56, type: 3}
@@ -6478,6 +6475,43 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: f19200800740c5549b0e845fc0a9bc4d, type: 3}
   m_PrefabInstance: {fileID: 2087640553}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2130043893 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3867559608291639773, guid: b67b64aa99eb92441813021a060cae22, type: 3}
+  m_PrefabInstance: {fileID: 2188449122693676793}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &2130043895 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 2058729353833047750, guid: b67b64aa99eb92441813021a060cae22, type: 3}
+  m_PrefabInstance: {fileID: 2188449122693676793}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2130043896
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2130043893}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4a131180787ed944bbfe3cd4263b871, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onFadeOut:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1107266553}
+        m_TargetAssemblyTypeName: GamePlayer, Assembly-CSharp
+        m_MethodName: OnFadeComplete
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &2135053924
 GameObject:
   m_ObjectHideFlags: 0
@@ -6559,13 +6593,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1327314702848074105, guid: b67b64aa99eb92441813021a060cae22, type: 3}
-      propertyPath: m_IsActive
+    - target: {fileID: 146481983185743015, guid: b67b64aa99eb92441813021a060cae22, type: 3}
+      propertyPath: m_Name
+      value: Panel
+      objectReference: {fileID: 0}
+    - target: {fileID: 2058729353833047750, guid: b67b64aa99eb92441813021a060cae22, type: 3}
+      propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2188449122881346454, guid: b67b64aa99eb92441813021a060cae22, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2188449122881346454, guid: b67b64aa99eb92441813021a060cae22, type: 3}
       propertyPath: m_LocalPosition.x
