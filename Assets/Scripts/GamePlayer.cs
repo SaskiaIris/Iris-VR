@@ -1,11 +1,9 @@
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Events;
 
 public class GamePlayer : MonoBehaviour {
     [SerializeField]
     private Movement movement;
-
 
     [SerializeField]
     private List<GameState> gameStates = null;
@@ -17,6 +15,7 @@ public class GamePlayer : MonoBehaviour {
     private Animator fadeAnimator;
 
     private int currentState;
+    private int previousState;
     private int endState;
 
     private float timer = 0.0f;
@@ -34,6 +33,7 @@ public class GamePlayer : MonoBehaviour {
         } else {
             endState = 0;
         }
+        previousState = endState;
 
         StartTimer();
     }
@@ -52,18 +52,31 @@ public class GamePlayer : MonoBehaviour {
             Debug.Log("Current State: " + currentState);
             StartTimer();
             currentState++;
+            if(previousState == endState) {
+                previousState = 0;
+            } else {
+                previousState++;
+            }
         } else if(!isCounting && currentState == endState) {
             fadeAnimator.SetTrigger("Fadeout");
             Debug.Log("Current State: " + currentState);
             StartTimer();
             currentState = 0;
+            previousState = endState;
         }
     }
+        
 
     public void OnFadeComplete() {
         movement.MoveToWayPoint(currentState);
+        SetNextPartOn();
         fadeAnimator.SetTrigger("Fadein");
 	}
+
+    public void SetNextPartOn() {
+        gameStates[previousState].associatedExperience.SetActive(false);
+        gameStates[currentState].associatedExperience.SetActive(true);
+    }
 
     private void StartTimer() {
         isCounting = true;
